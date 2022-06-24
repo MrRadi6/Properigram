@@ -51,9 +51,9 @@
 		5233FE2E28663BB800C540AD /* Properigram */ = {
 			isa = PBXGroup;
 			children = (
-				5233FE2F28663BB800C540AD /* ProperigramApp.swift */,
-				5233FE3128663BB800C540AD /* ContentView.swift */,
-				5233FE3328663BBA00C540AD /* Assets.xcassets */,
+				5233FE3D28663C9700C540AD /* App */,
+				5233FE3E28663CA100C540AD /* Modules */,
+				5233FE3F28663CB200C540AD /* Resources */,
 				5233FE3528663BBA00C540AD /* Preview Content */,
 			);
 			path = Properigram;
@@ -65,6 +65,30 @@
 				5233FE3628663BBA00C540AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5233FE3D28663C9700C540AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE2F28663BB800C540AD /* ProperigramApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5233FE3E28663CA100C540AD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE3128663BB800C540AD /* ContentView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5233FE3F28663CB200C540AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE3328663BBA00C540AD /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
