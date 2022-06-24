@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Properigram
+
+  Created by Samir on 6/24/22.
+  
+*/
+
+// MARK: - Globals
+"global_unkown_network_error" = "An error has been occuered!";

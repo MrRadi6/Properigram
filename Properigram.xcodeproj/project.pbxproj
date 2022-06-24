@@ -7,18 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37AF5418CCEF2C7FADA1DD64 /* libPods-Properigram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD9B0F789534C851088ECDA /* libPods-Properigram.a */; };
 		5233FE3028663BB800C540AD /* ProperigramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE2F28663BB800C540AD /* ProperigramApp.swift */; };
 		5233FE3228663BB800C540AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE3128663BB800C540AD /* ContentView.swift */; };
 		5233FE3428663BBA00C540AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5233FE3328663BBA00C540AD /* Assets.xcassets */; };
 		5233FE3728663BBA00C540AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5233FE3628663BBA00C540AD /* Preview Assets.xcassets */; };
+		5233FE552866443900C540AD /* BaseReqeust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE472866443900C540AD /* BaseReqeust.swift */; };
+		5233FE562866443900C540AD /* PropertiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE482866443900C540AD /* PropertiesRequest.swift */; };
+		5233FE572866443900C540AD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE492866443900C540AD /* Network.swift */; };
+		5233FE582866443900C540AD /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE4A2866443900C540AD /* BaseError.swift */; };
+		5233FE592866443900C540AD /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE4C2866443900C540AD /* BaseAPI.swift */; };
+		5233FE5A2866443900C540AD /* PropertyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE4D2866443900C540AD /* PropertyAPI.swift */; };
+		5233FE5B2866443900C540AD /* PropertyRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE4F2866443900C540AD /* PropertyRequester.swift */; };
+		5233FE5C2866443900C540AD /* PropertyDetailsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE512866443900C540AD /* PropertyDetailsDTO.swift */; };
+		5233FE5D2866443900C540AD /* PropertyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE522866443900C540AD /* PropertyDTO.swift */; };
+		5233FE612866445600C540AD /* PropertyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE602866445600C540AD /* PropertyRepository.swift */; };
+		5233FE642866455A00C540AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5233FE662866455A00C540AD /* Localizable.strings */; };
+		5233FE6A286645A800C540AD /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE69286645A800C540AD /* String+Localizable.swift */; };
+		5233FE6F286645FB00C540AD /* PropertyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE6C286645FB00C540AD /* PropertyDetails.swift */; };
+		5233FE70286645FB00C540AD /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE6D286645FB00C540AD /* Property.swift */; };
+		5233FE71286645FB00C540AD /* PropertiesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE6E286645FB00C540AD /* PropertiesPage.swift */; };
+		5233FE732866493900C540AD /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE722866493900C540AD /* Globals.swift */; };
+		5233FE752866537700C540AD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE742866537700C540AD /* APIResponse.swift */; };
+		5233FE7728665A2800C540AD /* PropertyPageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE7628665A2800C540AD /* PropertyPageDTO.swift */; };
+		5233FE7A28665D9000C540AD /* PropertiesListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE7928665D9000C540AD /* PropertiesListDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FD9B0F789534C851088ECDA /* libPods-Properigram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Properigram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5233FE2C28663BB800C540AD /* Properigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Properigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5233FE2F28663BB800C540AD /* ProperigramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperigramApp.swift; sourceTree = "<group>"; };
 		5233FE3128663BB800C540AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5233FE3328663BBA00C540AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5233FE3628663BBA00C540AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5233FE472866443900C540AD /* BaseReqeust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseReqeust.swift; sourceTree = "<group>"; };
+		5233FE482866443900C540AD /* PropertiesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesRequest.swift; sourceTree = "<group>"; };
+		5233FE492866443900C540AD /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5233FE4A2866443900C540AD /* BaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		5233FE4C2866443900C540AD /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		5233FE4D2866443900C540AD /* PropertyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyAPI.swift; sourceTree = "<group>"; };
+		5233FE4F2866443900C540AD /* PropertyRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyRequester.swift; sourceTree = "<group>"; };
+		5233FE512866443900C540AD /* PropertyDetailsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailsDTO.swift; sourceTree = "<group>"; };
+		5233FE522866443900C540AD /* PropertyDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDTO.swift; sourceTree = "<group>"; };
+		5233FE602866445600C540AD /* PropertyRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyRepository.swift; sourceTree = "<group>"; };
+		5233FE652866455A00C540AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5233FE69286645A800C540AD /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		5233FE6C286645FB00C540AD /* PropertyDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetails.swift; sourceTree = "<group>"; };
+		5233FE6D286645FB00C540AD /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		5233FE6E286645FB00C540AD /* PropertiesPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesPage.swift; sourceTree = "<group>"; };
+		5233FE722866493900C540AD /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		5233FE742866537700C540AD /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		5233FE7628665A2800C540AD /* PropertyPageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyPageDTO.swift; sourceTree = "<group>"; };
+		5233FE7928665D9000C540AD /* PropertiesListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListDTO.swift; sourceTree = "<group>"; };
+		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
+		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37AF5418CCEF2C7FADA1DD64 /* libPods-Properigram.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +80,8 @@
 			children = (
 				5233FE2E28663BB800C540AD /* Properigram */,
 				5233FE2D28663BB800C540AD /* Products */,
+				FE1F7A85C2CCC34DC225031F /* Pods */,
+				65AA82791BB6800177B49155 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,7 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				5233FE3D28663C9700C540AD /* App */,
+				5233FE4328663E4C00C540AD /* Domain */,
 				5233FE3E28663CA100C540AD /* Modules */,
+				5233FE4028663CFD00C540AD /* Data */,
+				5233FE672866458100C540AD /* Utils */,
 				5233FE3F28663CB200C540AD /* Resources */,
 				5233FE3528663BBA00C540AD /* Preview Content */,
 			);
@@ -87,8 +135,137 @@
 			isa = PBXGroup;
 			children = (
 				5233FE3328663BBA00C540AD /* Assets.xcassets */,
+				5233FE662866455A00C540AD /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5233FE4028663CFD00C540AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE4228663D0F00C540AD /* Repositories */,
+				5233FE4128663D0600C540AD /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5233FE4128663D0600C540AD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE4E2866443900C540AD /* RequesterProtocols */,
+				5233FE502866443900C540AD /* DTOs */,
+				5233FE4B2866443900C540AD /* APIs */,
+				5233FE462866443900C540AD /* Requests */,
+				5233FE4A2866443900C540AD /* BaseError.swift */,
+				5233FE742866537700C540AD /* APIResponse.swift */,
+				5233FE492866443900C540AD /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5233FE4228663D0F00C540AD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE602866445600C540AD /* PropertyRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5233FE4328663E4C00C540AD /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE4428663E5900C540AD /* Entities */,
+				5233FE4528663E6B00C540AD /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5233FE4428663E5900C540AD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE6D286645FB00C540AD /* Property.swift */,
+				5233FE6E286645FB00C540AD /* PropertiesPage.swift */,
+				5233FE6C286645FB00C540AD /* PropertyDetails.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5233FE4528663E6B00C540AD /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		5233FE462866443900C540AD /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE472866443900C540AD /* BaseReqeust.swift */,
+				5233FE482866443900C540AD /* PropertiesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		5233FE4B2866443900C540AD /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE4C2866443900C540AD /* BaseAPI.swift */,
+				5233FE4D2866443900C540AD /* PropertyAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5233FE4E2866443900C540AD /* RequesterProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE4F2866443900C540AD /* PropertyRequester.swift */,
+			);
+			path = RequesterProtocols;
+			sourceTree = "<group>";
+		};
+		5233FE502866443900C540AD /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE522866443900C540AD /* PropertyDTO.swift */,
+				5233FE7628665A2800C540AD /* PropertyPageDTO.swift */,
+				5233FE7928665D9000C540AD /* PropertiesListDTO.swift */,
+				5233FE512866443900C540AD /* PropertyDetailsDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		5233FE672866458100C540AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE722866493900C540AD /* Globals.swift */,
+				5233FE68286645A200C540AD /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5233FE68286645A200C540AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE69286645A800C540AD /* String+Localizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		65AA82791BB6800177B49155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9B0F789534C851088ECDA /* libPods-Properigram.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE1F7A85C2CCC34DC225031F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */,
+				747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5233FE3A28663BBA00C540AD /* Build configuration list for PBXNativeTarget "Properigram" */;
 			buildPhases = (
+				B92E3C98D614C73AC433CB3C /* [CP] Check Pods Manifest.lock */,
 				5233FE2828663BB800C540AD /* Sources */,
 				5233FE2928663BB800C540AD /* Frameworks */,
 				5233FE2A28663BB800C540AD /* Resources */,
@@ -150,23 +328,78 @@
 			buildActionMask = 2147483647;
 			files = (
 				5233FE3728663BBA00C540AD /* Preview Assets.xcassets in Resources */,
+				5233FE642866455A00C540AD /* Localizable.strings in Resources */,
 				5233FE3428663BBA00C540AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B92E3C98D614C73AC433CB3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Properigram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5233FE2828663BB800C540AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5233FE5B2866443900C540AD /* PropertyRequester.swift in Sources */,
+				5233FE572866443900C540AD /* Network.swift in Sources */,
+				5233FE582866443900C540AD /* BaseError.swift in Sources */,
+				5233FE5D2866443900C540AD /* PropertyDTO.swift in Sources */,
+				5233FE612866445600C540AD /* PropertyRepository.swift in Sources */,
 				5233FE3228663BB800C540AD /* ContentView.swift in Sources */,
+				5233FE70286645FB00C540AD /* Property.swift in Sources */,
+				5233FE5A2866443900C540AD /* PropertyAPI.swift in Sources */,
+				5233FE732866493900C540AD /* Globals.swift in Sources */,
+				5233FE7728665A2800C540AD /* PropertyPageDTO.swift in Sources */,
+				5233FE7A28665D9000C540AD /* PropertiesListDTO.swift in Sources */,
 				5233FE3028663BB800C540AD /* ProperigramApp.swift in Sources */,
+				5233FE6F286645FB00C540AD /* PropertyDetails.swift in Sources */,
+				5233FE562866443900C540AD /* PropertiesRequest.swift in Sources */,
+				5233FE5C2866443900C540AD /* PropertyDetailsDTO.swift in Sources */,
+				5233FE552866443900C540AD /* BaseReqeust.swift in Sources */,
+				5233FE592866443900C540AD /* BaseAPI.swift in Sources */,
+				5233FE71286645FB00C540AD /* PropertiesPage.swift in Sources */,
+				5233FE6A286645A800C540AD /* String+Localizable.swift in Sources */,
+				5233FE752866537700C540AD /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5233FE662866455A00C540AD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5233FE652866455A00C540AD /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5233FE3828663BBA00C540AD /* Debug */ = {
@@ -285,6 +518,7 @@
 		};
 		5233FE3B28663BBA00C540AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +548,7 @@
 		};
 		5233FE3C28663BBA00C540AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
