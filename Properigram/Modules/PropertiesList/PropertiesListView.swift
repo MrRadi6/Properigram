@@ -21,16 +21,17 @@ struct PropertiesListView: View {
             .alert(viewModel.appError?.title ?? "",
                    isPresented: $viewModel.showError,
                    actions: {
-                Button("global_ok_action".localized) {
-                    viewModel.showError = false
-                }
+                Button("global_ok_action".localized, role: .cancel) {}
             },message: {
                 Text(viewModel.appError?.message ?? "")
             })
             .navigationTitle("properties_list_View_properties_title".localized)
             .navigationBarTitleDisplayMode(.large)
+            .overlay(content: {
+                LoadingView(isLoading: $viewModel.isLoading)
+            })
             .onAppear {
-                viewModel.reloadProperties()
+                viewModel.viewDidAppear()
             }
         }
     }

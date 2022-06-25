@@ -8,6 +8,7 @@
 import SwiftUI
 
 protocol PropertiesListViewModelProtocol: ObservableObject {
+    func viewDidAppear()
     func reloadProperties()
     func viewWillShow(item: PropertyItem)
 }
@@ -35,6 +36,22 @@ class PropertiesListViewModel {
 
 // MARK: - Conforming to PropertiesListViewModelProtocol
 extension PropertiesListViewModel: PropertiesListViewModelProtocol {
+
+    func viewDidAppear() {
+        isLoading = true
+        useCase.getProperties { [weak self] result in
+            guard let self = self else { return }
+            self.isLoading = false
+            switch result {
+            case .success(let properties):
+                self.appError = nil
+                self.properties = properties.map({ PropertyItem(property: $0)})
+            case .failure(let error):
+                self.appError = error
+            }
+        }
+    }
+
     func reloadProperties() {
         useCase.getProperties { [weak self] result in
             guard let self = self else { return }

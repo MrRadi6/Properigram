@@ -36,7 +36,8 @@
 		5233FE842866910700C540AD /* PropertyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE832866910700C540AD /* PropertyItem.swift */; };
 		5233FE86286693E300C540AD /* Image+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE85286693E300C540AD /* Image+Constants.swift */; };
 		5233FE882866A2AF00C540AD /* PropertiesListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */; };
-		52C9037D28674917009510D4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9037C28674917009510D4 /* AppError.swift */; };
+		52C903802867691A009510D4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9037F2867691A009510D4 /* LoadingView.swift */; };
+		52C903842867712D009510D4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C903832867712D009510D4 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +71,8 @@
 		5233FE832866910700C540AD /* PropertyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyItem.swift; sourceTree = "<group>"; };
 		5233FE85286693E300C540AD /* Image+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Constants.swift"; sourceTree = "<group>"; };
 		5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListUseCase.swift; sourceTree = "<group>"; };
-		52C9037C28674917009510D4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		52C9037F2867691A009510D4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		52C903832867712D009510D4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,10 +198,10 @@
 		5233FE4428663E5900C540AD /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				52C9037C28674917009510D4 /* AppError.swift */,
 				5233FE6D286645FB00C540AD /* Property.swift */,
 				5233FE6E286645FB00C540AD /* PropertiesPage.swift */,
 				5233FE6C286645FB00C540AD /* PropertyDetails.swift */,
+				52C903832867712D009510D4 /* AppError.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -252,8 +254,9 @@
 		5233FE672866458100C540AD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5233FE722866493900C540AD /* Globals.swift */,
+				52C9037E286768E6009510D4 /* Views */,
 				5233FE68286645A200C540AD /* Extensions */,
+				5233FE722866493900C540AD /* Globals.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -291,6 +294,14 @@
 			children = (
 			);
 			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		52C9037E286768E6009510D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52C9037F2867691A009510D4 /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		65AA82791BB6800177B49155 /* Frameworks */ = {
@@ -411,10 +422,10 @@
 				5233FE842866910700C540AD /* PropertyItem.swift in Sources */,
 				5233FE572866443900C540AD /* Network.swift in Sources */,
 				5233FE7D28668E5C00C540AD /* PropertiesListView.swift in Sources */,
-				52C9037D28674917009510D4 /* AppError.swift in Sources */,
 				5233FE582866443900C540AD /* BaseError.swift in Sources */,
 				5233FE5D2866443900C540AD /* PropertyDTO.swift in Sources */,
 				5233FE612866445600C540AD /* PropertyRepository.swift in Sources */,
+				52C903802867691A009510D4 /* LoadingView.swift in Sources */,
 				5233FE70286645FB00C540AD /* Property.swift in Sources */,
 				5233FE5A2866443900C540AD /* PropertyAPI.swift in Sources */,
 				5233FE732866493900C540AD /* Globals.swift in Sources */,
@@ -426,6 +437,7 @@
 				5233FE7F28668E6600C540AD /* PropertiesListViewModel.swift in Sources */,
 				5233FE6F286645FB00C540AD /* PropertyDetails.swift in Sources */,
 				5233FE562866443900C540AD /* PropertiesRequest.swift in Sources */,
+				52C903842867712D009510D4 /* AppError.swift in Sources */,
 				5233FE5C2866443900C540AD /* PropertyDetailsDTO.swift in Sources */,
 				5233FE822866910000C540AD /* PropertyItemView.swift in Sources */,
 				5233FE552866443900C540AD /* BaseReqeust.swift in Sources */,
