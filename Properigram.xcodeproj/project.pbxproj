@@ -36,6 +36,7 @@
 		5233FE842866910700C540AD /* PropertyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE832866910700C540AD /* PropertyItem.swift */; };
 		5233FE86286693E300C540AD /* Image+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE85286693E300C540AD /* Image+Constants.swift */; };
 		5233FE882866A2AF00C540AD /* PropertiesListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */; };
+		52C9037D28674917009510D4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9037C28674917009510D4 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		5233FE832866910700C540AD /* PropertyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyItem.swift; sourceTree = "<group>"; };
 		5233FE85286693E300C540AD /* Image+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Constants.swift"; sourceTree = "<group>"; };
 		5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListUseCase.swift; sourceTree = "<group>"; };
+		52C9037C28674917009510D4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				5233FE3D28663C9700C540AD /* App */,
+				52C9037B286748FC009510D4 /* BaseClasses */,
 				5233FE4328663E4C00C540AD /* Domain */,
 				5233FE3E28663CA100C540AD /* Modules */,
 				5233FE4028663CFD00C540AD /* Data */,
@@ -166,9 +169,9 @@
 				5233FE502866443900C540AD /* DTOs */,
 				5233FE4B2866443900C540AD /* APIs */,
 				5233FE462866443900C540AD /* Requests */,
-				5233FE4A2866443900C540AD /* BaseError.swift */,
 				5233FE742866537700C540AD /* APIResponse.swift */,
 				5233FE492866443900C540AD /* Network.swift */,
+				5233FE4A2866443900C540AD /* BaseError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 		5233FE4428663E5900C540AD /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				52C9037C28674917009510D4 /* AppError.swift */,
 				5233FE6D286645FB00C540AD /* Property.swift */,
 				5233FE6E286645FB00C540AD /* PropertiesPage.swift */,
 				5233FE6C286645FB00C540AD /* PropertyDetails.swift */,
@@ -280,6 +284,13 @@
 				5233FE832866910700C540AD /* PropertyItem.swift */,
 			);
 			path = PropertyItem;
+			sourceTree = "<group>";
+		};
+		52C9037B286748FC009510D4 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClasses;
 			sourceTree = "<group>";
 		};
 		65AA82791BB6800177B49155 /* Frameworks */ = {
@@ -400,6 +411,7 @@
 				5233FE842866910700C540AD /* PropertyItem.swift in Sources */,
 				5233FE572866443900C540AD /* Network.swift in Sources */,
 				5233FE7D28668E5C00C540AD /* PropertiesListView.swift in Sources */,
+				52C9037D28674917009510D4 /* AppError.swift in Sources */,
 				5233FE582866443900C540AD /* BaseError.swift in Sources */,
 				5233FE5D2866443900C540AD /* PropertyDTO.swift in Sources */,
 				5233FE612866445600C540AD /* PropertyRepository.swift in Sources */,

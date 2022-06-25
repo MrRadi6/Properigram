@@ -8,8 +8,6 @@
 import SwiftUI
 
 protocol PropertiesListViewModelProtocol: ObservableObject {
-    var properties: [PropertyItem] { get set }
-    
     func reloadProperties()
     func viewWillShow(item: PropertyItem)
 }
@@ -20,7 +18,15 @@ class PropertiesListViewModel {
 
     @Published var properties: [PropertyItem] = []
     @Published var isLoading: Bool = false
+    @Published var showError: Bool = false
 
+    var appError: AppError? {
+        didSet {
+            guard appError != nil else { return }
+            showError = true
+        }
+    }
+    
     init(useCase:PropertiesListUseCaseProtocol) {
         self.useCase = useCase
     }
@@ -33,9 +39,10 @@ extension PropertiesListViewModel: PropertiesListViewModelProtocol {
             guard let self = self else { return }
             switch result {
             case .success(let properties):
+                self.appError = nil
                 self.properties = properties.map({ PropertyItem(property: $0)})
             case .failure(let error):
-                dLog(error.message)
+                self.appError = error
             }
         }
     }
@@ -49,7 +56,7 @@ extension PropertiesListViewModel: PropertiesListViewModelProtocol {
                 let propertyItems = properties.map({ PropertyItem(property: $0)})
                 self.properties.append(contentsOf: propertyItems)
             case .failure(let error):
-                dLog(error.message)
+                self.appError = error
             }
         }
     }

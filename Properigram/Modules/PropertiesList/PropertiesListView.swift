@@ -23,6 +23,15 @@ struct PropertiesListView: View {
             .refreshable {
                 viewModel.reloadProperties()
             }
+            .alert(viewModel.appError?.title ?? "",
+                   isPresented: $viewModel.showError,
+                   actions: {
+                Button("global_ok_action".localized) {
+                    viewModel.showError = false
+                }
+            },message: {
+                Text(viewModel.appError?.message ?? "")
+            })
             .navigationTitle("properties_list_View_properties_title".localized)
             .navigationBarTitleDisplayMode(.large)
             .onAppear {

@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+// MARK: - UIKIt Image
 extension UIImage {
     static let propertyPlaceholder = UIImage(named: "ic_property")!
 }
 
+// MARK: - SwiftUI Image
 extension Image {
     static let propertyPlaceholder = Image("ic_property")
 }
