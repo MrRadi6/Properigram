@@ -15,7 +15,9 @@ protocol PropertiesListUseCaseProtocol {
 
 class PropertiesListUseCase: PropertiesListUseCaseProtocol {
 
+    private let pageSize = 10
     private var page: PropertiesPage?
+
     let repository: PropertyRepositoryProtocol
 
     init(repository: PropertyRepositoryProtocol) {
@@ -23,7 +25,7 @@ class PropertiesListUseCase: PropertiesListUseCaseProtocol {
     }
     
     func getProperties(completion: @escaping (Result<[Property], AppError>) -> Void) {
-        repository.getProperties(with: 1, propertiesPerPage: 12) { [weak self] result in
+        repository.getProperties(with: 1, propertiesPerPage: pageSize) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let properyPage):
@@ -41,7 +43,7 @@ class PropertiesListUseCase: PropertiesListUseCaseProtocol {
         guard page.currentPage < page.totalPages else { return }
         let nextPage = page.currentPage + 1
         
-        repository.getProperties(with: nextPage, propertiesPerPage: 10) { [weak self] result in
+        repository.getProperties(with: nextPage, propertiesPerPage: pageSize) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let properyPage):
