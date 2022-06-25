@@ -9,13 +9,15 @@ import SwiftUI
 
 struct PropertyDetailsView: View {
 
+    private let imageHeight: CGFloat = 250
+
     @StateObject var viewModel: PropertyDetailsViewModel
 
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             if let propertyDetails = viewModel.propertyDetails {
                 PropertyImageView(imageURL: propertyDetails.imageURL)
-                    .frame(height: 250)
+                    .frame(height: imageHeight)
                     .padding()
                 PropertyDetailsItemView(title: "property_details_name_title".localized,
                                         description: propertyDetails.name)
@@ -36,12 +38,13 @@ struct PropertyDetailsView: View {
 
 
 private struct PropertyImageView: View {
+    private let imageCornerRadius: CGFloat = 5
     var imageURL: String?
 
     var body: some View {
         PropertyImage(imageURL: imageURL)
-            .clipShape(RoundedRectangle(cornerRadius: 5))
-            .shadow(radius: 5)
+            .clipShape(RoundedRectangle(cornerRadius: imageCornerRadius))
+            .shadow(radius: imageCornerRadius)
     }
 }
 

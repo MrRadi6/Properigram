@@ -47,7 +47,18 @@
 		52C9039628678F98009510D4 /* PropertyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039528678F98009510D4 /* PropertyImage.swift */; };
 		52C9039E28679817009510D4 /* PropertyDetailsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039D28679817009510D4 /* PropertyDetailsItem.swift */; };
 		52C903A0286799D6009510D4 /* PropertyDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039F286799D6009510D4 /* PropertyDetailsUseCase.swift */; };
+		52C903A82867A819009510D4 /* ProperigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C903A72867A819009510D4 /* ProperigramTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52C903A92867A819009510D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5233FE2428663BB800C540AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5233FE2B28663BB800C540AD;
+			remoteInfo = Properigram;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2FD9B0F789534C851088ECDA /* libPods-Properigram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Properigram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +102,8 @@
 		52C9039528678F98009510D4 /* PropertyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImage.swift; sourceTree = "<group>"; };
 		52C9039D28679817009510D4 /* PropertyDetailsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsItem.swift; sourceTree = "<group>"; };
 		52C9039F286799D6009510D4 /* PropertyDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsUseCase.swift; sourceTree = "<group>"; };
+		52C903A52867A819009510D4 /* ProperigramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProperigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C903A72867A819009510D4 /* ProperigramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperigramTests.swift; sourceTree = "<group>"; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52C903A22867A819009510D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				5233FE2E28663BB800C540AD /* Properigram */,
+				52C903A62867A819009510D4 /* ProperigramTests */,
 				5233FE2D28663BB800C540AD /* Products */,
 				FE1F7A85C2CCC34DC225031F /* Pods */,
 				65AA82791BB6800177B49155 /* Frameworks */,
@@ -121,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				5233FE2C28663BB800C540AD /* Properigram.app */,
+				52C903A52867A819009510D4 /* ProperigramTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -387,6 +409,14 @@
 			path = Navigator;
 			sourceTree = "<group>";
 		};
+		52C903A62867A819009510D4 /* ProperigramTests */ = {
+			isa = PBXGroup;
+			children = (
+				52C903A72867A819009510D4 /* ProperigramTests.swift */,
+			);
+			path = ProperigramTests;
+			sourceTree = "<group>";
+		};
 		65AA82791BB6800177B49155 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +455,24 @@
 			productReference = 5233FE2C28663BB800C540AD /* Properigram.app */;
 			productType = "com.apple.product-type.application";
 		};
+		52C903A42867A819009510D4 /* ProperigramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C903AB2867A819009510D4 /* Build configuration list for PBXNativeTarget "ProperigramTests" */;
+			buildPhases = (
+				52C903A12867A819009510D4 /* Sources */,
+				52C903A22867A819009510D4 /* Frameworks */,
+				52C903A32867A819009510D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52C903AA2867A819009510D4 /* PBXTargetDependency */,
+			);
+			name = ProperigramTests;
+			productName = ProperigramTests;
+			productReference = 52C903A52867A819009510D4 /* ProperigramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -437,6 +485,10 @@
 				TargetAttributes = {
 					5233FE2B28663BB800C540AD = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					52C903A42867A819009510D4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 5233FE2B28663BB800C540AD;
 					};
 				};
 			};
@@ -454,6 +506,7 @@
 			projectRoot = "";
 			targets = (
 				5233FE2B28663BB800C540AD /* Properigram */,
+				52C903A42867A819009510D4 /* ProperigramTests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,6 +519,13 @@
 				5233FE3728663BBA00C540AD /* Preview Assets.xcassets in Resources */,
 				5233FE642866455A00C540AD /* Localizable.strings in Resources */,
 				5233FE3428663BBA00C540AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52C903A32867A819009510D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +600,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52C903A12867A819009510D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C903A82867A819009510D4 /* ProperigramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52C903AA2867A819009510D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5233FE2B28663BB800C540AD /* Properigram */;
+			targetProxy = 52C903A92867A819009510D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5233FE662866455A00C540AD /* Localizable.strings */ = {
@@ -728,6 +804,42 @@
 			};
 			name = Release;
 		};
+		52C903AC2867A819009510D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52W72N842G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samir01.ProperigramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Properigram.app/Properigram";
+			};
+			name = Debug;
+		};
+		52C903AD2867A819009510D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52W72N842G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samir01.ProperigramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Properigram.app/Properigram";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -745,6 +857,15 @@
 			buildConfigurations = (
 				5233FE3B28663BBA00C540AD /* Debug */,
 				5233FE3C28663BBA00C540AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C903AB2867A819009510D4 /* Build configuration list for PBXNativeTarget "ProperigramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C903AC2867A819009510D4 /* Debug */,
+				52C903AD2867A819009510D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

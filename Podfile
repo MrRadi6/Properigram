@@ -8,5 +8,8 @@ end
 
 target 'Properigram' do
   sharedPods
+end
 
+target 'ProperigramTests' do
+  sharedPods
 end
