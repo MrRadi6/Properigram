@@ -97,7 +97,7 @@ class PropertiesListViewModelTests: XCTestCase {
         XCTAssertEqual(properties.count * 2, sut.properties.count)
     }
 
-    func testReloadPropertiesWithError() {
+    func testViewDidApearWithError() {
         // Given
         let expectation = XCTestExpectation(description: "wait for async call")
         let error = AppError(message: "error message")
@@ -114,7 +114,7 @@ class PropertiesListViewModelTests: XCTestCase {
         XCTAssertEqual(sut.appError?.message, error.message)
     }
 
-    func testGetMorePropertiesWithError() {
+    func testWillShowItemWithError() {
         // Given
         let expectation = XCTestExpectation(description: "wait for async call")
         let properties = PropertiesDataMocks.propertyPage.properties.map({ PropertyItem(property: $0) })

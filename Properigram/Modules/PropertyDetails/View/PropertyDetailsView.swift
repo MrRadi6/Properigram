@@ -16,7 +16,7 @@ struct PropertyDetailsView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             if let propertyDetails = viewModel.propertyDetails {
-                PropertyImageView(imageURL: propertyDetails.imageURL)
+                PropertyImageView(imageURL: propertyDetails.imageUrl)
                     .frame(height: imageHeight)
                     .padding()
                 PropertyDetailsItemView(title: "property_details_name_title".localized,

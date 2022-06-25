@@ -53,6 +53,7 @@
 		52CBA4BF2867AB6800CBB8C8 /* PropertiesDataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4BE2867AB6800CBB8C8 /* PropertiesDataMocks.swift */; };
 		52CBA4C32867AC6800CBB8C8 /* PropertiesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4C22867AC6800CBB8C8 /* PropertiesListViewModelTests.swift */; };
 		52CBA4C52867BF3E00CBB8C8 /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */; };
+		52CBA4C92867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4C82867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift */; };
 		C1761E3C0D2027336AD0E326 /* libPods-ProperigramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6874D1CC6A38D2B24F5C9BD6 /* libPods-ProperigramTests.a */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,7 @@
 		52CBA4BE2867AB6800CBB8C8 /* PropertiesDataMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesDataMocks.swift; sourceTree = "<group>"; };
 		52CBA4C22867AC6800CBB8C8 /* PropertiesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListViewModelTests.swift; sourceTree = "<group>"; };
 		52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
+		52CBA4C82867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		6874D1CC6A38D2B24F5C9BD6 /* libPods-ProperigramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProperigramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		75F2785DF81B4E214BB7CC1B /* Pods-ProperigramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProperigramTests.release.xcconfig"; path = "Target Support Files/Pods-ProperigramTests/Pods-ProperigramTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -429,7 +431,8 @@
 			children = (
 				52C903AF2867A8F3009510D4 /* Mocks */,
 				52C903AE2867A8DE009510D4 /* PropertiesListTests */,
-				52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */,
+				52CBA4C72867D22E00CBB8C8 /* PropertyDetailsTests */,
+				52CBA4CA2867D25700CBB8C8 /* Extensions */,
 			);
 			path = ProperigramTests;
 			sourceTree = "<group>";
@@ -475,6 +478,22 @@
 				52CBA4BE2867AB6800CBB8C8 /* PropertiesDataMocks.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		52CBA4C72867D22E00CBB8C8 /* PropertyDetailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				52CBA4C82867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift */,
+			);
+			path = PropertyDetailsTests;
+			sourceTree = "<group>";
+		};
+		52CBA4CA2867D25700CBB8C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		65AA82791BB6800177B49155 /* Frameworks */ = {
@@ -694,6 +713,7 @@
 				52CBA4C32867AC6800CBB8C8 /* PropertiesListViewModelTests.swift in Sources */,
 				52C903B22867A911009510D4 /* PropertiesListUseCaseMock.swift in Sources */,
 				52CBA4BC2867AA6A00CBB8C8 /* PropertyRepositoryMock.swift in Sources */,
+				52CBA4C92867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift in Sources */,
 				52CBA4BF2867AB6800CBB8C8 /* PropertiesDataMocks.swift in Sources */,
 				52CBA4C52867BF3E00CBB8C8 /* XCTestCase+Wait.swift in Sources */,
 			);

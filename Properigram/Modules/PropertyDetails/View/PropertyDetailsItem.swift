@@ -10,7 +10,7 @@ import Foundation
 struct PropertyDetailsItem {
     let name: String
     let address: String
-    var imageURL: String?
+    var imageUrl: String?
 }
 
 extension PropertyDetailsItem {
@@ -21,6 +21,6 @@ extension PropertyDetailsItem {
         } else {
             self.address = property.address
         }
-        self.imageURL = property.imageUrl
+        self.imageUrl = property.imageUrl
     }
 }
