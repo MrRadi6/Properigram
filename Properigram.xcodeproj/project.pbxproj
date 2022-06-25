@@ -47,7 +47,13 @@
 		52C9039628678F98009510D4 /* PropertyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039528678F98009510D4 /* PropertyImage.swift */; };
 		52C9039E28679817009510D4 /* PropertyDetailsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039D28679817009510D4 /* PropertyDetailsItem.swift */; };
 		52C903A0286799D6009510D4 /* PropertyDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039F286799D6009510D4 /* PropertyDetailsUseCase.swift */; };
-		52C903A82867A819009510D4 /* ProperigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C903A72867A819009510D4 /* ProperigramTests.swift */; };
+		52C903B22867A911009510D4 /* PropertiesListUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C903B12867A911009510D4 /* PropertiesListUseCaseMock.swift */; };
+		52CBA4B92867A9E100CBB8C8 /* PropertyDetailsUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4B82867A9E100CBB8C8 /* PropertyDetailsUseCaseMock.swift */; };
+		52CBA4BC2867AA6A00CBB8C8 /* PropertyRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4BB2867AA6A00CBB8C8 /* PropertyRepositoryMock.swift */; };
+		52CBA4BF2867AB6800CBB8C8 /* PropertiesDataMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4BE2867AB6800CBB8C8 /* PropertiesDataMocks.swift */; };
+		52CBA4C32867AC6800CBB8C8 /* PropertiesListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4C22867AC6800CBB8C8 /* PropertiesListViewModelTests.swift */; };
+		52CBA4C52867BF3E00CBB8C8 /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */; };
+		C1761E3C0D2027336AD0E326 /* libPods-ProperigramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6874D1CC6A38D2B24F5C9BD6 /* libPods-ProperigramTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		2FD9B0F789534C851088ECDA /* libPods-Properigram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Properigram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41457800624BF99020D197BB /* Pods-ProperigramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProperigramTests.debug.xcconfig"; path = "Target Support Files/Pods-ProperigramTests/Pods-ProperigramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5233FE2C28663BB800C540AD /* Properigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Properigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5233FE2F28663BB800C540AD /* ProperigramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperigramApp.swift; sourceTree = "<group>"; };
 		5233FE3328663BBA00C540AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,8 +110,15 @@
 		52C9039D28679817009510D4 /* PropertyDetailsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsItem.swift; sourceTree = "<group>"; };
 		52C9039F286799D6009510D4 /* PropertyDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsUseCase.swift; sourceTree = "<group>"; };
 		52C903A52867A819009510D4 /* ProperigramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProperigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52C903A72867A819009510D4 /* ProperigramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperigramTests.swift; sourceTree = "<group>"; };
+		52C903B12867A911009510D4 /* PropertiesListUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListUseCaseMock.swift; sourceTree = "<group>"; };
+		52CBA4B82867A9E100CBB8C8 /* PropertyDetailsUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsUseCaseMock.swift; sourceTree = "<group>"; };
+		52CBA4BB2867AA6A00CBB8C8 /* PropertyRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyRepositoryMock.swift; sourceTree = "<group>"; };
+		52CBA4BE2867AB6800CBB8C8 /* PropertiesDataMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesDataMocks.swift; sourceTree = "<group>"; };
+		52CBA4C22867AC6800CBB8C8 /* PropertiesListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListViewModelTests.swift; sourceTree = "<group>"; };
+		52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
+		6874D1CC6A38D2B24F5C9BD6 /* libPods-ProperigramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProperigramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
+		75F2785DF81B4E214BB7CC1B /* Pods-ProperigramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProperigramTests.release.xcconfig"; path = "Target Support Files/Pods-ProperigramTests/Pods-ProperigramTests.release.xcconfig"; sourceTree = "<group>"; };
 		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1761E3C0D2027336AD0E326 /* libPods-ProperigramTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,15 +427,61 @@
 		52C903A62867A819009510D4 /* ProperigramTests */ = {
 			isa = PBXGroup;
 			children = (
-				52C903A72867A819009510D4 /* ProperigramTests.swift */,
+				52C903AF2867A8F3009510D4 /* Mocks */,
+				52C903AE2867A8DE009510D4 /* PropertiesListTests */,
+				52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */,
 			);
 			path = ProperigramTests;
+			sourceTree = "<group>";
+		};
+		52C903AE2867A8DE009510D4 /* PropertiesListTests */ = {
+			isa = PBXGroup;
+			children = (
+				52CBA4C22867AC6800CBB8C8 /* PropertiesListViewModelTests.swift */,
+			);
+			path = PropertiesListTests;
+			sourceTree = "<group>";
+		};
+		52C903AF2867A8F3009510D4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				52CBA4BD2867AB4700CBB8C8 /* Entities */,
+				52C903B02867A8F9009510D4 /* UseCases */,
+				52CBA4BA2867AA4300CBB8C8 /* Repositories */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		52C903B02867A8F9009510D4 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				52C903B12867A911009510D4 /* PropertiesListUseCaseMock.swift */,
+				52CBA4B82867A9E100CBB8C8 /* PropertyDetailsUseCaseMock.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		52CBA4BA2867AA4300CBB8C8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				52CBA4BB2867AA6A00CBB8C8 /* PropertyRepositoryMock.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		52CBA4BD2867AB4700CBB8C8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				52CBA4BE2867AB6800CBB8C8 /* PropertiesDataMocks.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		65AA82791BB6800177B49155 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2FD9B0F789534C851088ECDA /* libPods-Properigram.a */,
+				6874D1CC6A38D2B24F5C9BD6 /* libPods-ProperigramTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -430,6 +491,8 @@
 			children = (
 				B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */,
 				747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */,
+				41457800624BF99020D197BB /* Pods-ProperigramTests.debug.xcconfig */,
+				75F2785DF81B4E214BB7CC1B /* Pods-ProperigramTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -459,6 +522,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C903AB2867A819009510D4 /* Build configuration list for PBXNativeTarget "ProperigramTests" */;
 			buildPhases = (
+				2E48AA2BFB229DECB40E9B5C /* [CP] Check Pods Manifest.lock */,
 				52C903A12867A819009510D4 /* Sources */,
 				52C903A22867A819009510D4 /* Frameworks */,
 				52C903A32867A819009510D4 /* Resources */,
@@ -532,6 +596,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E48AA2BFB229DECB40E9B5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProperigramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B92E3C98D614C73AC433CB3C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -604,7 +690,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C903A82867A819009510D4 /* ProperigramTests.swift in Sources */,
+				52CBA4B92867A9E100CBB8C8 /* PropertyDetailsUseCaseMock.swift in Sources */,
+				52CBA4C32867AC6800CBB8C8 /* PropertiesListViewModelTests.swift in Sources */,
+				52C903B22867A911009510D4 /* PropertiesListUseCaseMock.swift in Sources */,
+				52CBA4BC2867AA6A00CBB8C8 /* PropertyRepositoryMock.swift in Sources */,
+				52CBA4BF2867AB6800CBB8C8 /* PropertiesDataMocks.swift in Sources */,
+				52CBA4C52867BF3E00CBB8C8 /* XCTestCase+Wait.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +897,7 @@
 		};
 		52C903AC2867A819009510D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41457800624BF99020D197BB /* Pods-ProperigramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -824,6 +916,7 @@
 		};
 		52C903AD2867A819009510D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F2785DF81B4E214BB7CC1B /* Pods-ProperigramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

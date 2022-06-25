@@ -16,7 +16,7 @@ struct PropertyItem: Identifiable {
 extension PropertyItem {
     init(property: Property) {
         self.id = property.id
-        self.imageUrl = property.ImageUrl
+        self.imageUrl = property.imageUrl
         if property.address.isEmpty {
             self.address = "properties_list_empty_address".localized
         } else {

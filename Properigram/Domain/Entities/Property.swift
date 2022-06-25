@@ -10,7 +10,7 @@ import Foundation
 struct Property {
     let id: String
     let address: String
-    let ImageUrl: String?
+    let imageUrl: String?
 }
 
 extension Property: Equatable {}

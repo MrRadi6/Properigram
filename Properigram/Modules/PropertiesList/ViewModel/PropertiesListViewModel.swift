@@ -19,7 +19,7 @@ class PropertiesListViewModel: BaseViewModel {
 
     @Published var properties: [PropertyItem] = []
     @Published var showPageLoader: Bool = false
-    
+
     init(useCase:PropertiesListUseCaseProtocol) {
         self.useCase = useCase
     }

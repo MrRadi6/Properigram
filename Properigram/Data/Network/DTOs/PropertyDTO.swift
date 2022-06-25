@@ -18,7 +18,7 @@ extension PropertyDTO {
     func transferToProperty() -> Property {
         return Property(id: id,
                         address: address,
-                        ImageUrl: image)
+                        imageUrl: image)
     }
 }
 
