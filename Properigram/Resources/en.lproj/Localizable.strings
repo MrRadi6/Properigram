@@ -8,3 +8,7 @@
 
 // MARK: - Globals
 "global_unkown_network_error" = "An error has been occuered!";
+
+// MARK: - Properties List
+"properties_list_View_properties_title" = "Properties";
+"properties_list_empty_address" = "Address is not available for the moment";

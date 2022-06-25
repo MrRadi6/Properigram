@@ -11,7 +11,7 @@ import SwiftUI
 struct ProperigramApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PropertiesListView(viewModel: PropertiesListViewModel(useCase: PropertiesListUseCase(repository: PropertyRepository(remote: PropertyAPI()))))
         }
     }
 }

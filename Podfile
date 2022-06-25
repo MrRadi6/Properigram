@@ -3,6 +3,7 @@
 
 def sharedPods
   pod 'Alamofire'
+  pod 'Kingfisher', '~> 7.0'
 end
 
 target 'Properigram' do

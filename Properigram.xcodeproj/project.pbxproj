@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		37AF5418CCEF2C7FADA1DD64 /* libPods-Properigram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD9B0F789534C851088ECDA /* libPods-Properigram.a */; };
 		5233FE3028663BB800C540AD /* ProperigramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE2F28663BB800C540AD /* ProperigramApp.swift */; };
-		5233FE3228663BB800C540AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE3128663BB800C540AD /* ContentView.swift */; };
 		5233FE3428663BBA00C540AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5233FE3328663BBA00C540AD /* Assets.xcassets */; };
 		5233FE3728663BBA00C540AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5233FE3628663BBA00C540AD /* Preview Assets.xcassets */; };
 		5233FE552866443900C540AD /* BaseReqeust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE472866443900C540AD /* BaseReqeust.swift */; };
@@ -31,13 +30,18 @@
 		5233FE752866537700C540AD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE742866537700C540AD /* APIResponse.swift */; };
 		5233FE7728665A2800C540AD /* PropertyPageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE7628665A2800C540AD /* PropertyPageDTO.swift */; };
 		5233FE7A28665D9000C540AD /* PropertiesListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE7928665D9000C540AD /* PropertiesListDTO.swift */; };
+		5233FE7D28668E5C00C540AD /* PropertiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE7C28668E5C00C540AD /* PropertiesListView.swift */; };
+		5233FE7F28668E6600C540AD /* PropertiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE7E28668E6600C540AD /* PropertiesListViewModel.swift */; };
+		5233FE822866910000C540AD /* PropertyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE812866910000C540AD /* PropertyItemView.swift */; };
+		5233FE842866910700C540AD /* PropertyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE832866910700C540AD /* PropertyItem.swift */; };
+		5233FE86286693E300C540AD /* Image+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE85286693E300C540AD /* Image+Constants.swift */; };
+		5233FE882866A2AF00C540AD /* PropertiesListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FD9B0F789534C851088ECDA /* libPods-Properigram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Properigram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5233FE2C28663BB800C540AD /* Properigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Properigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5233FE2F28663BB800C540AD /* ProperigramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProperigramApp.swift; sourceTree = "<group>"; };
-		5233FE3128663BB800C540AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5233FE3328663BBA00C540AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5233FE3628663BBA00C540AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5233FE472866443900C540AD /* BaseReqeust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseReqeust.swift; sourceTree = "<group>"; };
@@ -59,6 +63,12 @@
 		5233FE742866537700C540AD /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		5233FE7628665A2800C540AD /* PropertyPageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyPageDTO.swift; sourceTree = "<group>"; };
 		5233FE7928665D9000C540AD /* PropertiesListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListDTO.swift; sourceTree = "<group>"; };
+		5233FE7C28668E5C00C540AD /* PropertiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListView.swift; sourceTree = "<group>"; };
+		5233FE7E28668E6600C540AD /* PropertiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListViewModel.swift; sourceTree = "<group>"; };
+		5233FE812866910000C540AD /* PropertyItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyItemView.swift; sourceTree = "<group>"; };
+		5233FE832866910700C540AD /* PropertyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyItem.swift; sourceTree = "<group>"; };
+		5233FE85286693E300C540AD /* Image+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Constants.swift"; sourceTree = "<group>"; };
+		5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListUseCase.swift; sourceTree = "<group>"; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +136,7 @@
 		5233FE3E28663CA100C540AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				5233FE3128663BB800C540AD /* ContentView.swift */,
+				5233FE7B28668E4800C540AD /* PropertiesList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 		5233FE4528663E6B00C540AD /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -247,8 +258,28 @@
 			isa = PBXGroup;
 			children = (
 				5233FE69286645A800C540AD /* String+Localizable.swift */,
+				5233FE85286693E300C540AD /* Image+Constants.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5233FE7B28668E4800C540AD /* PropertiesList */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE80286690E400C540AD /* PropertyItem */,
+				5233FE7C28668E5C00C540AD /* PropertiesListView.swift */,
+				5233FE7E28668E6600C540AD /* PropertiesListViewModel.swift */,
+			);
+			path = PropertiesList;
+			sourceTree = "<group>";
+		};
+		5233FE80286690E400C540AD /* PropertyItem */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE812866910000C540AD /* PropertyItemView.swift */,
+				5233FE832866910700C540AD /* PropertyItem.swift */,
+			);
+			path = PropertyItem;
 			sourceTree = "<group>";
 		};
 		65AA82791BB6800177B49155 /* Frameworks */ = {
@@ -366,20 +397,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				5233FE5B2866443900C540AD /* PropertyRequester.swift in Sources */,
+				5233FE842866910700C540AD /* PropertyItem.swift in Sources */,
 				5233FE572866443900C540AD /* Network.swift in Sources */,
+				5233FE7D28668E5C00C540AD /* PropertiesListView.swift in Sources */,
 				5233FE582866443900C540AD /* BaseError.swift in Sources */,
 				5233FE5D2866443900C540AD /* PropertyDTO.swift in Sources */,
 				5233FE612866445600C540AD /* PropertyRepository.swift in Sources */,
-				5233FE3228663BB800C540AD /* ContentView.swift in Sources */,
 				5233FE70286645FB00C540AD /* Property.swift in Sources */,
 				5233FE5A2866443900C540AD /* PropertyAPI.swift in Sources */,
 				5233FE732866493900C540AD /* Globals.swift in Sources */,
 				5233FE7728665A2800C540AD /* PropertyPageDTO.swift in Sources */,
+				5233FE86286693E300C540AD /* Image+Constants.swift in Sources */,
 				5233FE7A28665D9000C540AD /* PropertiesListDTO.swift in Sources */,
+				5233FE882866A2AF00C540AD /* PropertiesListUseCase.swift in Sources */,
 				5233FE3028663BB800C540AD /* ProperigramApp.swift in Sources */,
+				5233FE7F28668E6600C540AD /* PropertiesListViewModel.swift in Sources */,
 				5233FE6F286645FB00C540AD /* PropertyDetails.swift in Sources */,
 				5233FE562866443900C540AD /* PropertiesRequest.swift in Sources */,
 				5233FE5C2866443900C540AD /* PropertyDetailsDTO.swift in Sources */,
+				5233FE822866910000C540AD /* PropertyItemView.swift in Sources */,
 				5233FE552866443900C540AD /* BaseReqeust.swift in Sources */,
 				5233FE592866443900C540AD /* BaseAPI.swift in Sources */,
 				5233FE71286645FB00C540AD /* PropertiesPage.swift in Sources */,
