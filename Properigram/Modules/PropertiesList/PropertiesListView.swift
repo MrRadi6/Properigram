@@ -13,25 +13,9 @@ struct PropertiesListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // MARK: - Properties list view -
-                List(viewModel.properties) { property in
-                    PropertyItemView(property: property)
-                        .onAppear {
-                            viewModel.viewWillShow(item: property)
-                        }
-                        .listRowSeparator(.hidden)
-                }
-                .listStyle(.plain)
-                .refreshable {
-                    viewModel.reloadProperties()
-                }
-                // MARK: - Loading next page view -
+                PropertiesList(viewModel: viewModel)
                 if viewModel.showPageLoader {
-                    HStack {
-                        Spacer()
-                        ProgressView("properties_list_loading_more_properties".localized)
-                        Spacer()
-                    }
+                    LoadMoreProperties()
                 }
             }
             .alert(viewModel.appError?.title ?? "",
@@ -48,6 +32,36 @@ struct PropertiesListView: View {
             .onAppear {
                 viewModel.reloadProperties()
             }
+        }
+    }
+}
+
+// MARK: - Properties List View
+private struct PropertiesList: View {
+    @ObservedObject var viewModel: PropertiesListViewModel
+
+    var body: some View {
+        List(viewModel.properties) { property in
+            PropertyItemView(property: property)
+                .onAppear {
+                    viewModel.viewWillShow(item: property)
+                }
+                .listRowSeparator(.hidden)
+        }
+        .listStyle(.plain)
+        .refreshable {
+            viewModel.reloadProperties()
+        }
+    }
+}
+
+// MARK: - Load more Properties View
+private struct LoadMoreProperties: View {
+    var body: some View {
+        HStack {
+            Spacer()
+            ProgressView("properties_list_loading_more_properties".localized)
+            Spacer()
         }
     }
 }
