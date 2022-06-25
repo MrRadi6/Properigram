@@ -43,11 +43,15 @@ private struct PropertiesList: View {
 
     var body: some View {
         List(viewModel.properties) { property in
-            PropertyItemView(property: property)
-                .onAppear {
-                    viewModel.viewWillShow(item: property)
-                }
-                .listRowSeparator(.hidden)
+            NavigationLink {
+                PropertyDetailsNavigator.createModule(with: property.id)
+            } label: {
+                PropertyItemView(property: property)
+            }
+            .onAppear {
+                viewModel.viewWillShow(item: property)
+            }
+            .listRowSeparator(.hidden)
         }
         .listStyle(.plain)
         .refreshable {

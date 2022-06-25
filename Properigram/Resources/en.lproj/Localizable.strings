@@ -14,3 +14,10 @@
 "properties_list_View_properties_title" = "Properties";
 "properties_list_empty_address" = "Address is not available for the moment";
 "properties_list_loading_more_properties" = "Loading More";
+
+// MARK: - Property Details
+"property_details_title" = "Property Details";
+"property_details_name_title" = "Name";
+"property_details_address_title" = "Address";
+"property_details_empty_address" = "Ops property address is not available!";
+"property_details_empty_name" = "Ops property name is not available!";

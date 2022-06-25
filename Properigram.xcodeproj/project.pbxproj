@@ -39,6 +39,14 @@
 		52C903802867691A009510D4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9037F2867691A009510D4 /* LoadingView.swift */; };
 		52C903842867712D009510D4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C903832867712D009510D4 /* AppError.swift */; };
 		52C90386286771CC009510D4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C90385286771CC009510D4 /* BaseViewModel.swift */; };
+		52C9038928677D33009510D4 /* PropertyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9038828677D33009510D4 /* PropertyDetailsView.swift */; };
+		52C9038B28677D3E009510D4 /* PropertyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9038A28677D3E009510D4 /* PropertyDetailsViewModel.swift */; };
+		52C9038D28677EFD009510D4 /* PropertiesListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9038C28677EFD009510D4 /* PropertiesListNavigator.swift */; };
+		52C9039228677F94009510D4 /* AppicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039128677F94009510D4 /* AppicationFlow.swift */; };
+		52C9039428678284009510D4 /* PropertyDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039328678284009510D4 /* PropertyDetailsNavigator.swift */; };
+		52C9039628678F98009510D4 /* PropertyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039528678F98009510D4 /* PropertyImage.swift */; };
+		52C9039E28679817009510D4 /* PropertyDetailsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039D28679817009510D4 /* PropertyDetailsItem.swift */; };
+		52C903A0286799D6009510D4 /* PropertyDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9039F286799D6009510D4 /* PropertyDetailsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +83,14 @@
 		52C9037F2867691A009510D4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		52C903832867712D009510D4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		52C90385286771CC009510D4 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		52C9038828677D33009510D4 /* PropertyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsView.swift; sourceTree = "<group>"; };
+		52C9038A28677D3E009510D4 /* PropertyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewModel.swift; sourceTree = "<group>"; };
+		52C9038C28677EFD009510D4 /* PropertiesListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListNavigator.swift; sourceTree = "<group>"; };
+		52C9039128677F94009510D4 /* AppicationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppicationFlow.swift; sourceTree = "<group>"; };
+		52C9039328678284009510D4 /* PropertyDetailsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsNavigator.swift; sourceTree = "<group>"; };
+		52C9039528678F98009510D4 /* PropertyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImage.swift; sourceTree = "<group>"; };
+		52C9039D28679817009510D4 /* PropertyDetailsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsItem.swift; sourceTree = "<group>"; };
+		52C9039F286799D6009510D4 /* PropertyDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsUseCase.swift; sourceTree = "<group>"; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				5233FE2F28663BB800C540AD /* ProperigramApp.swift */,
+				52C9039128677F94009510D4 /* AppicationFlow.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -144,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				5233FE7B28668E4800C540AD /* PropertiesList */,
+				52C9038728677D1F009510D4 /* PropertyDetails */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -212,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */,
+				52C9039F286799D6009510D4 /* PropertyDetailsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -275,9 +294,9 @@
 		5233FE7B28668E4800C540AD /* PropertiesList */ = {
 			isa = PBXGroup;
 			children = (
-				5233FE80286690E400C540AD /* PropertyItem */,
-				5233FE7C28668E5C00C540AD /* PropertiesListView.swift */,
-				5233FE7E28668E6600C540AD /* PropertiesListViewModel.swift */,
+				52C90397286796BA009510D4 /* View */,
+				52C90398286796D2009510D4 /* ViewModel */,
+				52C90399286796DE009510D4 /* Navigator */,
 			);
 			path = PropertiesList;
 			sourceTree = "<group>";
@@ -303,8 +322,69 @@
 			isa = PBXGroup;
 			children = (
 				52C9037F2867691A009510D4 /* LoadingView.swift */,
+				52C9039528678F98009510D4 /* PropertyImage.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		52C9038728677D1F009510D4 /* PropertyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				52C9039A286796E8009510D4 /* View */,
+				52C9039B286796EC009510D4 /* ViewModel */,
+				52C9039C286796F3009510D4 /* Navigator */,
+			);
+			path = PropertyDetails;
+			sourceTree = "<group>";
+		};
+		52C90397286796BA009510D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE80286690E400C540AD /* PropertyItem */,
+				5233FE7C28668E5C00C540AD /* PropertiesListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52C90398286796D2009510D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5233FE7E28668E6600C540AD /* PropertiesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		52C90399286796DE009510D4 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				52C9038C28677EFD009510D4 /* PropertiesListNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		52C9039A286796E8009510D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52C9038828677D33009510D4 /* PropertyDetailsView.swift */,
+				52C9039D28679817009510D4 /* PropertyDetailsItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52C9039B286796EC009510D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52C9038A28677D3E009510D4 /* PropertyDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		52C9039C286796F3009510D4 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				52C9039328678284009510D4 /* PropertyDetailsNavigator.swift */,
+			);
+			path = Navigator;
 			sourceTree = "<group>";
 		};
 		65AA82791BB6800177B49155 /* Frameworks */ = {
@@ -425,7 +505,11 @@
 				5233FE842866910700C540AD /* PropertyItem.swift in Sources */,
 				5233FE572866443900C540AD /* Network.swift in Sources */,
 				5233FE7D28668E5C00C540AD /* PropertiesListView.swift in Sources */,
+				52C9039628678F98009510D4 /* PropertyImage.swift in Sources */,
+				52C9038928677D33009510D4 /* PropertyDetailsView.swift in Sources */,
 				5233FE582866443900C540AD /* BaseError.swift in Sources */,
+				52C9038D28677EFD009510D4 /* PropertiesListNavigator.swift in Sources */,
+				52C9039E28679817009510D4 /* PropertyDetailsItem.swift in Sources */,
 				5233FE5D2866443900C540AD /* PropertyDTO.swift in Sources */,
 				5233FE612866445600C540AD /* PropertyRepository.swift in Sources */,
 				52C903802867691A009510D4 /* LoadingView.swift in Sources */,
@@ -434,17 +518,21 @@
 				5233FE732866493900C540AD /* Globals.swift in Sources */,
 				5233FE7728665A2800C540AD /* PropertyPageDTO.swift in Sources */,
 				5233FE86286693E300C540AD /* Image+Constants.swift in Sources */,
+				52C9039228677F94009510D4 /* AppicationFlow.swift in Sources */,
 				5233FE7A28665D9000C540AD /* PropertiesListDTO.swift in Sources */,
 				5233FE882866A2AF00C540AD /* PropertiesListUseCase.swift in Sources */,
 				5233FE3028663BB800C540AD /* ProperigramApp.swift in Sources */,
 				5233FE7F28668E6600C540AD /* PropertiesListViewModel.swift in Sources */,
+				52C9039428678284009510D4 /* PropertyDetailsNavigator.swift in Sources */,
 				52C90386286771CC009510D4 /* BaseViewModel.swift in Sources */,
 				5233FE6F286645FB00C540AD /* PropertyDetails.swift in Sources */,
+				52C9038B28677D3E009510D4 /* PropertyDetailsViewModel.swift in Sources */,
 				5233FE562866443900C540AD /* PropertiesRequest.swift in Sources */,
 				52C903842867712D009510D4 /* AppError.swift in Sources */,
 				5233FE5C2866443900C540AD /* PropertyDetailsDTO.swift in Sources */,
 				5233FE822866910000C540AD /* PropertyItemView.swift in Sources */,
 				5233FE552866443900C540AD /* BaseReqeust.swift in Sources */,
+				52C903A0286799D6009510D4 /* PropertyDetailsUseCase.swift in Sources */,
 				5233FE592866443900C540AD /* BaseAPI.swift in Sources */,
 				5233FE71286645FB00C540AD /* PropertiesPage.swift in Sources */,
 				5233FE6A286645A800C540AD /* String+Localizable.swift in Sources */,
