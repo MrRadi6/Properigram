@@ -12,16 +12,27 @@ struct PropertiesListView: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.properties) { property in
-                PropertyItemView(property: property)
-                    .onAppear {
-                        viewModel.viewWillShow(item: property)
+            VStack {
+                // MARK: - Properties list view -
+                List(viewModel.properties) { property in
+                    PropertyItemView(property: property)
+                        .onAppear {
+                            viewModel.viewWillShow(item: property)
+                        }
+                        .listRowSeparator(.hidden)
+                }
+                .listStyle(.plain)
+                .refreshable {
+                    viewModel.reloadProperties()
+                }
+                // MARK: - Loading next page view -
+                if viewModel.showPageLoader {
+                    HStack {
+                        Spacer()
+                        ProgressView("properties_list_loading_more_properties".localized)
+                        Spacer()
                     }
-                    .listRowSeparator(.hidden)
-            }
-            .listStyle(.plain)
-            .refreshable {
-                viewModel.reloadProperties()
+                }
             }
             .alert(viewModel.appError?.title ?? "",
                    isPresented: $viewModel.showError,

@@ -13,3 +13,4 @@
 // MARK: - Properties List
 "properties_list_View_properties_title" = "Properties";
 "properties_list_empty_address" = "Address is not available for the moment";
+"properties_list_loading_more_properties" = "Loading More";

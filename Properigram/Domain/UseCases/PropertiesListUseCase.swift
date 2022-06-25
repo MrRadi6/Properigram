@@ -10,6 +10,7 @@ import Foundation
 protocol PropertiesListUseCaseProtocol {
     func getProperties(completion: @escaping (Result<[Property], AppError>) -> Void)
     func getMoreProperties(completion: @escaping (Result<[Property], AppError>) -> Void)
+    func canGetMoreProperties() -> Bool
 }
 
 class PropertiesListUseCase: PropertiesListUseCaseProtocol {
@@ -22,7 +23,7 @@ class PropertiesListUseCase: PropertiesListUseCaseProtocol {
     }
     
     func getProperties(completion: @escaping (Result<[Property], AppError>) -> Void) {
-        repository.getProperties(with: 1, propertiesPerPage: 10) { [weak self] result in
+        repository.getProperties(with: 1, propertiesPerPage: 12) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let properyPage):
@@ -37,9 +38,9 @@ class PropertiesListUseCase: PropertiesListUseCaseProtocol {
 
     func getMoreProperties(completion: @escaping (Result<[Property], AppError>) -> Void) {
         guard let page = page else { return }
+        guard page.currentPage < page.totalPages else { return }
         let nextPage = page.currentPage + 1
-        guard nextPage <= page.totalPages else { return }
-
+        
         repository.getProperties(with: nextPage, propertiesPerPage: 10) { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -51,5 +52,10 @@ class PropertiesListUseCase: PropertiesListUseCaseProtocol {
                 completion(.failure(appError))
             }
         }
+    }
+
+    func canGetMoreProperties() -> Bool {
+        guard let page = page else { return false }
+        return page.currentPage < page.totalPages
     }
 }
