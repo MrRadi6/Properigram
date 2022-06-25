@@ -38,6 +38,7 @@
 		5233FE882866A2AF00C540AD /* PropertiesListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */; };
 		52C903802867691A009510D4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9037F2867691A009510D4 /* LoadingView.swift */; };
 		52C903842867712D009510D4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C903832867712D009510D4 /* AppError.swift */; };
+		52C90386286771CC009510D4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C90385286771CC009510D4 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		5233FE872866A2AF00C540AD /* PropertiesListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListUseCase.swift; sourceTree = "<group>"; };
 		52C9037F2867691A009510D4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		52C903832867712D009510D4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		52C90385286771CC009510D4 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		B0420D90799B62F9A2BA5EA0 /* Pods-Properigram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.debug.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,6 +294,7 @@
 		52C9037B286748FC009510D4 /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				52C90385286771CC009510D4 /* BaseViewModel.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				5233FE882866A2AF00C540AD /* PropertiesListUseCase.swift in Sources */,
 				5233FE3028663BB800C540AD /* ProperigramApp.swift in Sources */,
 				5233FE7F28668E6600C540AD /* PropertiesListViewModel.swift in Sources */,
+				52C90386286771CC009510D4 /* BaseViewModel.swift in Sources */,
 				5233FE6F286645FB00C540AD /* PropertyDetails.swift in Sources */,
 				5233FE562866443900C540AD /* PropertiesRequest.swift in Sources */,
 				52C903842867712D009510D4 /* AppError.swift in Sources */,
