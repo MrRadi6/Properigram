@@ -30,9 +30,6 @@ struct PropertiesListView: View {
             .overlay(content: {
                 LoadingView(isLoading: $viewModel.isLoading)
             })
-            .onAppear {
-                viewModel.viewDidAppear()
-            }
         }
     }
 }

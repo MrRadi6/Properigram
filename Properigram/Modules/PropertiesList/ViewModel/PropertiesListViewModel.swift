@@ -8,7 +8,6 @@
 import SwiftUI
 
 protocol PropertiesListViewModelProtocol: BaseViewModel {
-    func viewDidAppear()
     func reloadProperties()
     func viewWillShow(item: PropertyItem)
 }
@@ -22,6 +21,8 @@ class PropertiesListViewModel: BaseViewModel {
 
     init(useCase:PropertiesListUseCaseProtocol) {
         self.useCase = useCase
+        super.init()
+        getProperties(showLoading: true)
     }
 
     private func getProperties(showLoading: Bool) {
@@ -42,11 +43,7 @@ class PropertiesListViewModel: BaseViewModel {
 
 // MARK: - Conforming to PropertiesListViewModelProtocol
 extension PropertiesListViewModel: PropertiesListViewModelProtocol {
-
-    func viewDidAppear() {
-        getProperties(showLoading: true)
-    }
-
+    
     func reloadProperties() {
         getProperties(showLoading: false)
     }

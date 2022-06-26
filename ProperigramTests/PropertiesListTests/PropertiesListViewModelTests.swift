@@ -25,33 +25,6 @@ class PropertiesListViewModelTests: XCTestCase {
         deinitModule()
     }
 
-    func testViewDidAppear()  {
-        // Given
-        let properties = PropertiesDataMocks.propertyPage.properties
-        let expectation = XCTestExpectation(description: "wait for async call")
-        useCase.properties = properties
-        // When
-        sut.viewDidAppear()
-        sut.$properties
-            .sink { _ in
-                expectation.fulfill()
-            }
-            .store(in: &cancelable)
-        // Then
-        wait(for: [expectation], timeout: 5)
-        XCTAssertEqual(properties.count, sut.properties.count)
-        XCTAssertEqual(properties[0].id, sut.properties[0].id)
-        XCTAssertEqual(properties[0].address, sut.properties[0].address)
-        XCTAssertEqual(properties[0].imageUrl, sut.properties[0].imageUrl)
-    }
-
-    func testShowLoadingOnViewDidAppear() {
-        // When
-        sut.viewDidAppear()
-        // Then
-        XCTAssertTrue(sut.isLoading)
-    }
-
     func testHideLoadingOnReloadProperties() {
         // When
         sut.reloadProperties()
@@ -97,13 +70,13 @@ class PropertiesListViewModelTests: XCTestCase {
         XCTAssertEqual(properties.count * 2, sut.properties.count)
     }
 
-    func testViewDidApearWithError() {
+    func testViewReloadWithError() {
         // Given
         let expectation = XCTestExpectation(description: "wait for async call")
         let error = AppError(message: "error message")
         useCase.error = error
         // When
-        sut.viewDidAppear()
+        sut.reloadProperties()
         sut.$showError
             .sink { _ in
                 expectation.fulfill()
