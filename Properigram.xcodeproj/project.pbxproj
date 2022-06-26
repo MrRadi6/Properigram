@@ -55,6 +55,7 @@
 		52CBA4C52867BF3E00CBB8C8 /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */; };
 		52CBA4C92867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4C82867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift */; };
 		52CBA4CD2867D58800CBB8C8 /* PropertiesListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4CC2867D58800CBB8C8 /* PropertiesListUseCaseTests.swift */; };
+		52CBA4CF2867DD1E00CBB8C8 /* PropertyDetailsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBA4CE2867DD1E00CBB8C8 /* PropertyDetailsUseCaseTests.swift */; };
 		C1761E3C0D2027336AD0E326 /* libPods-ProperigramTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6874D1CC6A38D2B24F5C9BD6 /* libPods-ProperigramTests.a */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,7 @@
 		52CBA4C42867BF3E00CBB8C8 /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
 		52CBA4C82867D24B00CBB8C8 /* PropertyDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		52CBA4CC2867D58800CBB8C8 /* PropertiesListUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesListUseCaseTests.swift; sourceTree = "<group>"; };
+		52CBA4CE2867DD1E00CBB8C8 /* PropertyDetailsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailsUseCaseTests.swift; sourceTree = "<group>"; };
 		6874D1CC6A38D2B24F5C9BD6 /* libPods-ProperigramTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProperigramTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747DE519D8E415DDB9EA7036 /* Pods-Properigram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Properigram.release.xcconfig"; path = "Target Support Files/Pods-Properigram/Pods-Properigram.release.xcconfig"; sourceTree = "<group>"; };
 		75F2785DF81B4E214BB7CC1B /* Pods-ProperigramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProperigramTests.release.xcconfig"; path = "Target Support Files/Pods-ProperigramTests/Pods-ProperigramTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -503,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				52CBA4CC2867D58800CBB8C8 /* PropertiesListUseCaseTests.swift */,
+				52CBA4CE2867DD1E00CBB8C8 /* PropertyDetailsUseCaseTests.swift */,
 			);
 			path = UseCasesTests;
 			sourceTree = "<group>";
@@ -722,6 +725,7 @@
 			files = (
 				52CBA4CD2867D58800CBB8C8 /* PropertiesListUseCaseTests.swift in Sources */,
 				52CBA4B92867A9E100CBB8C8 /* PropertyDetailsUseCaseMock.swift in Sources */,
+				52CBA4CF2867DD1E00CBB8C8 /* PropertyDetailsUseCaseTests.swift in Sources */,
 				52CBA4C32867AC6800CBB8C8 /* PropertiesListViewModelTests.swift in Sources */,
 				52C903B22867A911009510D4 /* PropertiesListUseCaseMock.swift in Sources */,
 				52CBA4BC2867AA6A00CBB8C8 /* PropertyRepositoryMock.swift in Sources */,
