@@ -11,7 +11,7 @@ import SwiftUI
 struct ProperigramApp: App {
     var body: some Scene {
         WindowGroup {
-//            AppicationFlow().launchApp()
+            AppicationFlow().launchApp()
         }
     }
 }
